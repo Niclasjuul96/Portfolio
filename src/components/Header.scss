@@ -1,0 +1,12 @@
+.Header {
+    display: grid; 
+
+    grid-area: 1 / 2;
+
+    grid-template-columns: 200px 1200px 200px;
+    grid-template-rows: auto;
+}
+
+.logo{
+    grid-area: 1 / 1;
+}
