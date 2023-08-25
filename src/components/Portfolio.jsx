@@ -4,7 +4,7 @@ import './Portfolio.scss';
 function Portfolio() {
   return (
     <div className="Portfolio">
-
+        <p>portfolio</p>
     </div>
   );
 }

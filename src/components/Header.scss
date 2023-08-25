@@ -1,12 +1,68 @@
-.Header {
+.Header-container {
     display: grid; 
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: 100px;
+    align-items: center;
 
-    grid-area: 1 / 2;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Hireme {
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    border-radius: 10px;
+    font-size: 0.94117647058824rem;
+    color: #ffffff;
+    background-color: rgb(236 91 83);
+    transition: 0.3s ease-in-out;
+    border: 0;
+  }
 
-    grid-template-columns: 200px 1200px 200px;
-    grid-template-rows: auto;
+  .Hireme:hover{
+    background-color: rgb(171, 66, 60);
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: 100px;
+  }
+  
+  #navbar li {
+    margin: 0 10px;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  #navbar li a {
+    text-decoration: none;
+  }
+
+  #navbar li a:hover{
+    color:red;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+  }
+  #navbar li a.active{
+    color:red;
+    cursor: pointer;
 }
-
-.logo{
-    grid-area: 1 / 1;
-}
+  

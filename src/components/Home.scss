@@ -1,0 +1,128 @@
+.Home{
+    display: grid;
+    grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.introduction {
+    display: grid; 
+    grid-area: 1 / 1;
+    padding-top: 70px;
+    grid-template-columns: 57px 608px 471px;
+    grid-template-rows: auto;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+
+.Links{
+    grid-area: 1 / 1;
+    padding-bottom: 300px;
+    li{
+        list-style-type: none;
+        padding-bottom: calc(27px / 2);
+    }
+}
+
+.link-list-item{
+    padding: 0;
+    margin: 0;
+}
+
+.link-list-item li a {
+    text-decoration: none;
+    color: #000; /* Set the link color */
+    font-size: 26px;
+    transition: color 0.3s;
+    padding-right: 20px
+}
+
+.link-list-item li a:hover{
+    color: #0077B5;
+}
+
+.Home-who{
+    grid-area: 1 / 2;
+}
+
+.Home-title{
+    font-size: 62px;
+    color: #002d5b;
+    margin-bottom: 20px;
+}
+
+.Home-subtext{
+    font-size: 24px;
+    font-weight: 0;
+    color: gray;
+}
+
+.Home-learn-more{
+    button{
+            font-family: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-size: 0.94117647058824rem;
+            color: #ffffff;
+            background-color: rgb(236 91 83);
+            transition: 0.3s ease-in-out;
+            border: 0;
+            min-height: 46px;
+            min-width: 146.7px;
+            margin-top: 60px;
+          }
+        
+          button:hover{
+            background-color: rgb(171, 66, 60);
+          }
+    }
+
+.Home-picture{
+    grid-area: 1 / 3;
+    background-image: url(../assets/avatar.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.home-about-me{
+    display: grid;
+    grid-area: 2 / 1;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+
+    .Heading{
+        grid-area: 1 / 1;
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        color: #002d5b;
+        padding-top: 100px;
+    }
+    .Heading-subtext{
+        grid-area: 2 / 1;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .content{
+        display: grid;
+        grid-area: 3 / 1; 
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+
+        .content-1{
+            grid-area: 1 / 1;
+        }
+        .content-2{
+            grid-area: 1 / 2;
+        }
+        .content-3{
+            grid-area: 1 / 3;
+        }
+    }
+}
