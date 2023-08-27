@@ -50,10 +50,6 @@ function Home() {
     }
     return null;
   });
-
-  const redirect = () => {
-    window.location.href = "./about";
-  }
   
   return (
     <div className="Home">
@@ -79,9 +75,11 @@ function Home() {
         </div>
         <div className='Home-who'>
           <div className='Home-title'>I'm Web Developer Niclas Schæffer</div>
-          <div className='Home-subtext'>a passionate fullstack Developer based in Roskilde, Denmark. 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctusnec ullamcorper mattis, pulvinar dapibus leop llamcorper, lorem ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctusnec ullamcorper mattis, pulvinar dapibus leop llamcorper, lorem ipsum. </div>
-          <div className='Home-learn-more'><button onClick={redirect}>Learn More</button></div>
+          <div className='Home-subtext'> 
+            A passionate Fullstack Web Developer based in Roskilde. co owner of StableStack, and a fulltime dad.
+            Fast learner and ready for some challenges.   
+          </div>
+          {/* <div className='Home-learn-more'><button onClick={redirectlearnmore}>Learn More</button></div> */}
         </div>
         <div className='Home-picture'>
           <img alt="me" src={Avatar}/> {/* Avatar Picture for Homepage. */}
@@ -93,7 +91,8 @@ function Home() {
           About Me
         </div>
         <div className='Heading-subtext'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctusnec ullamcorper mattis, pulvinar dapibus leop llamcorper, lorem ipsum.
+        I like to develop expertise in a number of areas over the course of 
+        my life and career.  
         </div>
         <div className='content'>
             <div className='content-1'>
@@ -101,19 +100,40 @@ function Home() {
                 <h5>Developing With a Passion While Exploring The World.</h5>
               </div>
               <div className='content-1-subtext'>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <p> 
+                  Developing with passion and focused on structured coding style. 
+                  I am doing freelancing while i am studying in software technology on DTU, Denmark for my decree.
+                  I currently working on projects that will show my skills as a web developer to the world. My personality type is ISFJ-A.  
+                </p>
               </div>
               <div className='content-1-subtext2'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>
+                  I don't like to define myself by the work i've done. 
+                  I define myself by the work I want to do. Skills can be taught, 
+                  personality is inherent. I prefer to keep learning, continue challenging myself, 
+                  and do interesting things that matter. 
+                </p>
               </div>
               <button className='content-1-button'>Contact Me</button>
             </div>
             <div className='content-2'>
               <div className='content-2-subtext1'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <p>
+                  Fueled by high energi levels and boundless enthusiasm, 
+                  i'm easily inspired and more then willing to follow my fascinations, 
+                  wherever they take me. I'm passionate, expressive, multi-talented 
+                  spirit with a natural ability to entertain and inspire. I'm never 
+                  satisfied to just come up with ideas. Instead i have an almost impulsive 
+                  need to act on them.
+                </p>
               </div>
               <div className='content-2-subtext2'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>
+                  My abundant energy fuels me in the pursuit of many interests, 
+                  hobbies, areas of study and artistic endeavors. 
+                  I'm a fast learner, able to pick up new skills and juggle different projects 
+                  and roles with relative ease. 
+                </p>
                 </div>
             </div>
             <div className='content-3'>

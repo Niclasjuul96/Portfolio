@@ -7,22 +7,22 @@ const Services = [
         key: 1, 
         name: 'Web Development',
         img: webdevelopment,
-        description: 'So much web development documentation is available So much web development documentation is available So much web development documentation is available So much web development documentation is available So much web development documentation is available So much web development documentation is available',
-        link: "./portfolio"
+        description: 'I like to code things from scratch, and enjoy bringing ideas to life in the browser.        ',
+        link: "./about"
     },
     { 
         key: 2,
         name: 'UI/UX Design',
         img: UIUX,
-        description: 'So much web development documentation is available So much web development documentation is available So much web development documentation is available So much web development documentation is available So much web development documentation is available So much web development documentation is available',
-        link: "./portfolio"
+        description: 'I value simple content structure, clean design patterns, and thoughtful interactions.',
+        link: "./about"
     },
     { 
         key: 3,
         name: 'FreeLancing',
         img: freelancing,
-        description: 'So much web development documentation is available So much web development documentation is available So much web development documentation is available So much web development documentation is available So much web development documentation is available So much web development documentation is available',
-        link: "./portfolio"
+        description: 'I want to set my self free and work on multiple projects and bringing my ideas to life.',
+        link: "./about"
     },
 ]
 
