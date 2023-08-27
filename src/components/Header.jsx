@@ -16,7 +16,7 @@ class Header extends Component {
     window.location.href = "./contact";
   };
 
-  render() { // Fixed: replaced return() with render()
+  render() {
     return (
       <div className="Header-container">
         <div className="logo">

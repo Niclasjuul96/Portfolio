@@ -22,7 +22,7 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#cfe0f1",GradientType=1);
 
   grid-template-columns: auto 1200px auto;
-  grid-template-rows: 100px auto auto 100px;
+  grid-template-rows: 100px auto 100px;
 }
 
 .App::-webkit-scrollbar{
@@ -44,7 +44,7 @@ html {
 }
 
 .body {
-  grid-area: 2 / 2 / span 2 / span 1;
+  grid-area: 2 / 2;
 }
 
 .Footer {
