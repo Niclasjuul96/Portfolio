@@ -12,6 +12,7 @@ class Header extends Component {
     this.setState({ clicked: !this.state.clicked });
   };
 
+
   handleRedirect = () => {
     window.location.href = "./contact";
   };

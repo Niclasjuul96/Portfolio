@@ -6,7 +6,7 @@ import Services from "../assets/services"
 import Experiences from "../assets/WorkExperience"
 
 function Home() {
-
+  document.title = "Home";
   const servicescontent = Services.map(service => 
     <div className='card-service' key={service.key}>
       <img src={service.img} alt="services" />

@@ -5,6 +5,7 @@ import TechStack from '../assets/techstack';
 import Avatar from '../assets/avatar.jpg'
 
 function About() {
+  document.title = 'About';
   return (
     <div className="About">
       <div className='heading'>

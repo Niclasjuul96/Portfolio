@@ -1,0 +1,23 @@
+.Portfolio{
+
+    .heading {
+        font-size: 2.8235294117647rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #002d5b;
+        
+        h4{
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        .underline {
+        display: flex;
+        justify-content: center;
+        border-top: 3px solid rgb(236 91 83);
+        width: 7%;
+        margin-top: 5px;
+        }
+    }
+}

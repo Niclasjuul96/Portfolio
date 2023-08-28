@@ -31,6 +31,9 @@ html {
   grid-template-rows: 100px auto 100px;
 }
 
+::selection{
+  background-color: rgb(236 91 83);
+}
 .App::-webkit-scrollbar{
   display: none;
 }
