@@ -1,5 +1,11 @@
 html {
-  font-family: "McLaren", cursive;
+  @font-face {
+    font-family: 'mclarenregular';
+    src: url('./assets/webfontkit-20230828-052518/mclaren-regular-webfont.woff2') format('woff2'),
+         url('./assets/webfontkit-20230828-052518/mclaren-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 }
 
 .App {
