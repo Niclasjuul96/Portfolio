@@ -16,7 +16,7 @@ function About() {
         
       <section className='content'>
         <div className='Avatar'>
-          <img src={Avatar}></img>
+          <img src={Avatar} alt='Niclas'></img>
         </div>
         <div className='designing'>
           <div className='heading'>
