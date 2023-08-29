@@ -39,19 +39,19 @@
         justify-content: flex-start;
         flex-direction: column;
         height: 100%;
-    }
+   
+        .Home-title{
+            font-size: 62px;
+            color: #002d5b;
+            margin-bottom: 20px;
+        }
 
-    .Home-title{
-        font-size: 62px;
-        color: #002d5b;
-        margin-bottom: 20px;
-    }
-
-    .Home-subtext{
-        font-size: 24px;
-        font-weight: 0;
-        color: gray;
-        padding-right: 10px;
+        .Home-subtext{
+            font-size: 24px;
+            font-weight: 0;
+            color: gray;
+            padding-right: 10px;
+        }
     }
 
     .Home-learn-more{
