@@ -25,6 +25,7 @@
         display: grid;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(2, auto);
+        padding-top: 25px;
 
         .information{
             display: grid;
@@ -114,13 +115,20 @@
             flex-direction: row;
 
 
-
             form{
                 flex: 2;
                 background-color: white;
                 margin: 20px;
                 border-radius: 5px;
                 padding: 20px;
+
+                .greeting{
+                    font-size: 28px;
+                }
+
+                .underline{
+                    padding-bottom: 10px;
+                }
 
                 .form-group{
                     color: black;
@@ -140,7 +148,9 @@
 
                     input:focus{
                         color: black;
-                        outline-color: rgb(236 91 83);
+                        background-color: white;
+                        border: 0;
+                        outline: none;
                     }
 
 
@@ -189,16 +199,18 @@
 
                     textarea{
                         color: grey; 
-                        width: 100.3%;
+                        width: 100%;
                         height: 100%;
                         font-size: 22px;
                         background-color: #edeff2;
                         border: 1px solid #c4c7cc;
+                        resize: none;
                     }
 
                     textarea:focus{
                         color: black;
-                        outline-color: rgb(236 91 83);
+                        outline: none;
+                        background-color: white;
                     }
                 }
 
@@ -206,6 +218,55 @@
 
             .MessageMe{
                 flex: 1;
+                margin: 20px 20px;
+                padding: 20px;
+
+
+                .heading{
+                    align-items: flex-start;
+                    font-size: 28px;
+                    padding-left: 60px;
+                }
+                .underline{
+                    width: 10%;
+                    margin-left: 60px;
+
+                }
+
+                .content{
+                    color: black;
+                    font-size: 20px;
+                    padding: 20px;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                }
+
+                .links{
+                    .icon-list-item{
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        li{
+                            list-style-type: none;
+                        }
+
+                        li a {
+                            text-decoration: none;
+                            color: #000;
+                            font-size: 26px;
+                            transition: color 0.3s;
+                            padding-right: 20px
+                    }
+                    li a:hover{
+                        color: rgb(171, 66, 60);
+                    }
+
+                    }
+                }
             }
         }
 

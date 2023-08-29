@@ -10,7 +10,14 @@ function Contact() {
   const [email, setemail] = useState('');
   const [message, setmessage] = useState('');
 
+  const handleTextareaChange = (event) => {
+    const inputValue = event.target.value;
 
+    if (inputValue.length <= 250) {
+      setmessage(inputValue);
+    }
+  };
+  
   const sendEmail = (e) => {
     e.preventDefault();
   
@@ -19,17 +26,12 @@ function Contact() {
           setname('');
           setemail('');
           setmessage('');
-
-          
-
       }, (error) => {
 
       });
   };
 
-
   const handlechange = (event) => {
-    
     if (event.target.id === "name") {
       setname(event.target.value);
     } else if (event.target.id === "email") {
@@ -66,34 +68,78 @@ function Contact() {
 
           </div>
           <div className='getting-in-touch'>
-            
             <form ref={form} onSubmit={sendEmail}>
+              <div className='greeting'>
+                Get in touch
+              </div>
+              <div className='underline'></div>
               <div className="form-group">
-                <input type="text" id="name" onChange={handlechange} placeholder='Enter your name' name="name" className="form-control" value={name} required />
+                <input 
+                  type="text" 
+                  id="name" 
+                  onChange={handlechange} 
+                  placeholder='Enter your name' 
+                  name="name" 
+                  className="form-control" 
+                  value={name} required />
               </div>
               <div className="form-group">
-                <input type="email" id="email" onChange={handlechange} placeholder='Enter your email' name="email" className="form-control" value={email} required />
+                <input 
+                  type="email" 
+                  id="email" 
+                  onChange={handlechange} 
+                  placeholder='Enter your email' 
+                  name="email" 
+                  className="form-control" 
+                  value={email} required />
               </div>
               <div className="form-group-message">
-                <textarea id="message" onChange={handlechange} value={message} placeholder='Enter your message' name="message"></textarea>
+                <textarea 
+                  id="message" 
+                  onChange={handleTextareaChange} 
+                  value={message} placeholder='Enter your message' 
+                  name="message"
+                  maxLength={250}>
+                </textarea>
               </div>
               <div className="form-last">
                 <div className='remaining'>
-                  <p>testing</p>
+                  <p>{250 - message.length} characters remaining</p>
                 </div>
                 <button type="submit" className="Send">Send Message</button>
               </div>
             </form>
             <div className='MessageMe'>
               <div className='heading'>
-                Message
+                Message Me
               </div>
               <div className='underline'></div>
               <div className='content'>
+              Wanna get in touch or talk about a project? 
+              Feel free to contact me via email or drop a line in the form. 
+              I endeavour to respond to all enquiries within 1 working day. 
+              I look forward to hearing from you, whether it's for 
+              collaboration or project idea.
 
               </div>
               <div className='links'>
-
+                <ul className='icon-list-item'>
+                  <li>
+                    <a href="https://www.linkedin.com/in/niclas-juul-schaeffer/" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li >
+                    <a href="https://github.com/Niclasjuul96" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                  <a href="https://www.facebook.com/profile.php?id=1119953702" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-facebook"></i>
+                  </a> 
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
