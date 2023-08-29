@@ -1,9 +1,14 @@
 import React from 'react';
 import './Portfolio.scss';
-import avatar from '../assets/avatar.jpg'
+import avatar from '../assets/avatar.jpg';
+
+
 
 function Portfolio() {
   document.title = 'Portfolio';
+
+  const counter = 0; 
+
 
 
   return (
