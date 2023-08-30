@@ -1,22 +1,37 @@
 import React from 'react';
 import './Portfolio.scss';
-import avatar from '../assets/avatar.jpg';
+import projects from "../assets/projects"
 
 
 
 function Portfolio() {
   document.title = 'Portfolio';
 
-  
-  const counter = 0; 
-  const createprojects = () => {
-    counter++;
-    switch(counter) {
-      
-    }
 
+  const onProjectclick = (project) => {
+    window.open(project.livepreviewurl, '_blank');
   }
 
+  
+  let counter = 0; 
+  const projectsContent = projects.map(project => {
+    counter++;
+    if( counter <= 2){
+      return (
+        <div id={"image" + counter} className='big-box'>
+          <img src={project.imgURL} alt='big-project' className='big-image' onClick={() => {onProjectclick(project)}}/>
+        </div>
+      )
+    }else if(counter <= 9){
+      return ( 
+      <div id={"image" + counter} className='small-box'>
+        <img src={project.imgURL} alt='small-project' className='small-image' onClick={() => {onProjectclick(project)}}/>
+      </div>
+      )
+    }else{
+      return (<></>)
+    }
+  })
 
   return (
     <div className="Portfolio">
@@ -39,33 +54,7 @@ function Portfolio() {
       </section>
 
       <section className='projects'>
-        <div  id='image1' className='big-box'>
-          <img src={avatar} className='big-image'/>
-        </div>
-        <div id='image9' className='big-box'>
-          <img src={avatar} className='big-image'/>
-        </div>
-        <div id='image2' className='small-box'>
-          <img src={avatar} className='small-image'/>
-        </div>
-        <div id='image3' className='small-box'>
-          <img src={avatar} className='small-image'/>
-        </div>
-        <div id='image4' className='small-box'>
-          <img src={avatar} className='small-image'/>
-        </div>
-        <div id='image5' className='small-box'>
-          <img src={avatar} className='small-image'/>
-        </div>
-        <div id='image6' className='small-box'>
-          <img src={avatar} className='small-image'/>
-        </div>
-        <div id='image7' className='small-box'>
-          <img src={avatar} className='small-image'/>
-        </div>
-        <div id='image8' className='small-box'>
-          <img src={avatar} className='small-image'/>
-        </div>
+        {projectsContent}
       </section>
   
     </div>
