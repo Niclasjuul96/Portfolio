@@ -7,8 +7,15 @@ import avatar from '../assets/avatar.jpg';
 function Portfolio() {
   document.title = 'Portfolio';
 
+  
   const counter = 0; 
+  const createprojects = () => {
+    counter++;
+    switch(counter) {
+      
+    }
 
+  }
 
 
   return (
