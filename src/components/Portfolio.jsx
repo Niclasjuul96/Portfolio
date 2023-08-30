@@ -18,14 +18,14 @@ function Portfolio() {
     counter++;
     if( counter <= 2){
       return (
-        <div id={"image" + counter} className='big-box'>
-          <img src={project.imgURL} alt='big-project' className='big-image' onClick={() => {onProjectclick(project)}}/>
+        <div id={"image" + counter} className='big-box' key={project.key}>
+          <img src={project.imgURL} alt='big-project' className='big-image' onClick={() => {onProjectclick(project)}} key={project.key}/>
         </div>
       )
     }else if(counter <= 9){
       return ( 
-      <div id={"image" + counter} className='small-box'>
-        <img src={project.imgURL} alt='small-project' className='small-image' onClick={() => {onProjectclick(project)}}/>
+      <div id={"image" + counter} className='small-box' key={project.key}>
+        <img src={project.imgURL} alt='small-project' className='small-image' onClick={() => {onProjectclick(project)}} key={project.key}/>
       </div>
       )
     }else{

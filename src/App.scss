@@ -38,16 +38,6 @@ html {
   display: none;
 }
 
-.whitespace-left {
-  grid-area: 1 / 1 / span 2 / span 1;
-  height: 82.7%;
-}
-
-.whitespace-right {
-  grid-area: 1 / 3 / span 2 / span 1;
-  height: 82.7%;
-}
-
 .Header {
   grid-area: 1 / 2;
 }
@@ -58,5 +48,25 @@ html {
 
 .Footer {
   grid-area: 3 / 2;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto 80px;
+    // adjust the layout and sizes as per mobile screen
+  }
+  
+  .Header, .Footer {
+    grid-area: 1 / 1 / 2 / 2; // Span full width
+    height: 80px; // Reduced height for mobile
+  }
+  
+  .body {
+    grid-area: 2 / 1 / 3 / 2; // Span full width
+    // additional mobile-specific styles
+  }
+
+  // Add additional styles for other components to make them mobile-friendly
 }
 

@@ -65,4 +65,66 @@
     color:red;
     cursor: pointer;
 }
+
+.menu-icon {
+  display: none;
+  i {
+    font-size: 2rem;
+  }
+}
+
+
+// Mobile-specific styles
+@media screen and (max-width: 768px) {
+  .Header-container {
+    grid-template-columns: 1fr;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    height: 50px;
+  }
+
+  .Hireme{
+    display: none;
+  }
+
+  .logo{
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  .navbar {
+    display: none;
+    position: fixed;
+    width: 30%;
+    top: 100px; 
+    right: 0;
+    background-color: white; 
+    z-index: 1; 
+    #navbar{
+      display: block;
+    }
+    li {
+      margin: 0;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+
+
+  .navbar.active {
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 50%);
+    z-index: 2; 
+    height: 100%;
+  }
+}
   

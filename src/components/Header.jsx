@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
 import './Header.scss';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 
 class Header extends Component {
   state = {
@@ -11,7 +11,6 @@ class Header extends Component {
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };
-
 
   handleRedirect = () => {
     window.location.href = "./contact";
@@ -23,42 +22,22 @@ class Header extends Component {
         <div className="logo">
           <img src={logo} id='logo' alt='placeholder'></img>
         </div>
-        <nav className="navbar">
-          <ul
-            id="navbar"
-            className={this.state.clicked ? "active" : ""}
-          >
+        <div className="menu-icon" onClick={this.handleClick}>
+          <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+        </div>
+        <nav className={this.state.clicked ? "navbar active" : "navbar"}>
+          <ul id="navbar">
             <li>
-              <NavLink
-                to="/"
-                onClick={this.handleClick}
-              >
-                Home
-              </NavLink>
+              <NavLink to="/" onClick={this.handleClick}>Home</NavLink>
             </li>
             <li>
-              <NavLink
-                to="/about"
-                onClick={this.handleClick}
-              >
-                About
-              </NavLink>
+              <NavLink to="/about" onClick={this.handleClick}>About</NavLink>
             </li>
             <li>
-              <NavLink
-                to="/portfolio"
-                onClick={this.handleClick}
-              >
-                Portfolio
-              </NavLink>
+              <NavLink to="/portfolio" onClick={this.handleClick}>Portfolio</NavLink>
             </li>
             <li>
-              <NavLink
-                to="/contact"
-                onClick={this.handleClick}
-              >
-                Contact
-              </NavLink>
+              <NavLink to="/contact" onClick={this.handleClick}>Contact</NavLink>
             </li>
           </ul>
         </nav>
