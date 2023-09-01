@@ -35,10 +35,6 @@ function About() {
             business requirements, in solving these challenges, 
             you have a great chance of finding success online. 
           </div>
-          <div className='contact'>
-            Let's talk about possible projects
-          </div>
-          <div className='email'>Niclasschaeffer96@gmail.com</div>
         </div>
         <div className='Products'>
           <div className='heading'>

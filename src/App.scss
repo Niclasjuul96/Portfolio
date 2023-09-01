@@ -50,11 +50,10 @@ html {
   grid-area: 3 / 2;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .App {
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     grid-template-rows: 80px auto 80px;
-    // adjust the layout and sizes as per mobile screen
   }
   
   .Header, .Footer {

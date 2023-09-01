@@ -41,7 +41,10 @@ class Header extends Component {
             </li>
           </ul>
         </nav>
-        <button className='Hireme' onClick={this.handleRedirect}>Hire me!</button>
+        <div className='btn'>
+          <button className='Hireme' onClick={this.handleRedirect}>Hire me!</button>
+        </div>
+        
       </div>
     );
   }

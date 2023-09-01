@@ -325,5 +325,92 @@
             }
         }
     }
-
+    
 }
+
+@media (max-width: 1024px) {
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .Links{display: none;}
+
+        .Home-who{
+            margin: 20px
+        }
+
+        .Home-picture{
+            margin: 20px;
+            img{
+                margin: 20px;
+                width: 80%;
+            }
+        }
+    }
+    
+  
+    
+    .home-about-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+     
+
+    .Heading-subtext{
+        margin-left: 20px;
+    }
+      
+      
+      .content{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+
+        .content-1{
+            .content-1-button{display: none;}
+        }
+        
+        .content-3{
+            margin-top: 10px;
+            img{
+                width: 80%;
+            }
+        }
+      }
+    }
+  
+    
+    .Services {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      
+      .content{
+        display: flex;
+        flex-direction: column;
+      }
+      
+    }
+  
+    
+    .Work-Experience {
+      display: flex;
+      flex-direction: column;
+      align-items: none;
+      width: 100%;
+
+      .content-1, .content-2 {
+        display: flex;
+        grid-area: none;
+        flex-direction: column;
+      }
+    }
+}
+
+
