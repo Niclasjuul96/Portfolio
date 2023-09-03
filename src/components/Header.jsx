@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
 import './Header.scss';
-import logo from '../assets/logo.png';
+import logo from '../assets/Logo.png';
 
 class Header extends Component {
   state = {
@@ -19,7 +19,7 @@ class Header extends Component {
   render() {
     return (
       <div className="Header-container">
-        <div className="logo">
+        <div className="logo" onClick={() => {window.location.href = "./"}} >
           <img src={logo} id='logo' alt='placeholder'></img>
         </div>
         <div className="menu-icon" onClick={this.handleClick}>

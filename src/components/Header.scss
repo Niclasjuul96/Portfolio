@@ -7,10 +7,23 @@
 
   }
   
+
+
   .logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
+    img {
+      aspect-ratio: 1 / 1.2;
+      width: 80px;
+      transition: transform 0.3s ease-in-out; 
+  
+      &:hover {
+        transform: scale(1.1);
+        content: url(../assets/Logohover.png);
+      }
+    }
   }
   
   .navbar {
@@ -103,6 +116,8 @@
   .logo{
     justify-content: flex-start;
     height: 50px;
+
+
   }
 
   .navbar {

@@ -50,22 +50,21 @@ html {
   grid-area: 3 / 2;
 }
 
+
 @media screen and (max-width: 1024px) {
   .App {
     grid-template-columns: 100%;
     grid-template-rows: 80px auto 80px;
   }
   
-  .Header, .Footer {
-    grid-area: 1 / 1 / 2 / 2; // Span full width
-    height: 80px; // Reduced height for mobile
+  .Header{
+    grid-area: 1 / 1; 
+    height: 80px; 
   }
   
   .body {
-    grid-area: 2 / 1 / 3 / 2; // Span full width
-    // additional mobile-specific styles
+    grid-area: 2 / 1 / 3 / 2; 
   }
 
-  // Add additional styles for other components to make them mobile-friendly
 }
 

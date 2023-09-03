@@ -269,11 +269,65 @@
                 }
             }
         }
-
-
-
-
     }
 
 
+}
+
+@media screen and (max-width: 768px) {
+
+    .Contact{
+        .content{
+            display: flex;
+            flex-direction: column;
+    
+            .information{
+                grid-area: none;
+                flex-direction: column;
+                align-items: center;
+                
+                .phone{
+                    width: 80%;
+                }
+                .email{
+                    width: 80%;
+                }
+                .city{
+                    width: 80%;
+                    margin-bottom: 50px;
+                }
+            }
+
+            .getting-in-touch{
+                grid-area: none;
+                flex-direction: column;
+                align-items: center;
+                
+
+                form{
+                    width: 83%;
+                    margin: 0;
+                    margin-bottom: 50px;
+                }
+
+                .MessageMe{
+                    width: 90%;
+                    margin: 0;
+                    padding: 0;
+
+                    .heading{
+                        align-items: center;
+                        padding-left: 0;
+                    }
+
+                    .content{
+                        align-items: center;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    
 }

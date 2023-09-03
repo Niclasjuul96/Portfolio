@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.scss';
 import TechStack from '../assets/techstack';
+import CV from '../assets/CV.pdf'
 
 import Avatar from '../assets/avatar.jpg'
 
@@ -72,7 +73,9 @@ function About() {
               at the button below.
           </div>
           <div className='socials'>
-            <button className='download-cv'>Download CV</button>
+          <form method="get" target="_blank" action={CV}>
+            <button className="download-cv" type="submit">Download CV</button>
+          </form>
             <div className='icons'>
               <ul className='icon-list-item'>
                 <li>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import Homeabout from "../assets/section-1-bg1.jpg"
-import Avatar from "../assets/avatar.jpg"
+import Avatar from "../assets/juulprofile.png"
 import Services from "../assets/services"
 import Experiences from "../assets/WorkExperience"
 
@@ -12,9 +12,6 @@ function Home() {
       <img src={service.img} alt="services" />
       <div className='card-title'>{service.name}</div>
       <div className='card-description'>{service.description}</div>
-      <a className='card-icon' href={service.link}>
-        <i className="fas fa-chevron-circle-right"></i>
-      </a>
     </div>);
 
   let workcounter = -1;
