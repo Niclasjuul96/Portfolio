@@ -97,7 +97,7 @@
 
 
 // Mobile-specific styles
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .Header-container {
     grid-template-columns: 1fr;
     position: fixed;
