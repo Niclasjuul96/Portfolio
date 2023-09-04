@@ -48,7 +48,8 @@ function Portfolio() {
             What Services You Will Get From Me 
           </div>
           <div className='description'>
-            Here is a list over my last projects, so you can have a sneak peek and see.
+            Here is a list over my last projects, so you can have a sneak peek and see. 
+            You can click on the projets and it will direct you to the project. Feel free to contact me for more informations about the projects. 
           </div>
           <div className='underline'></div>
       </section>

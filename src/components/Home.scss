@@ -344,8 +344,11 @@
         }
 
         .Home-picture{
+            display: flex;
             margin: 20px;
+            justify-content: center;
             img{
+                
                 margin: 20px;
                 width: 80%;
             }
@@ -377,6 +380,7 @@
         }
         
         .content-3{
+            justify-content: center;
             margin-top: 10px;
             img{
                 width: 80%;
