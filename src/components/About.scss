@@ -69,6 +69,7 @@
             .heading{
                 color: #002d5b;
                 font-size: 1.7647058823529rem;
+                align-items: flex-start;
             }
             .underline{
                 display: flex;
@@ -187,11 +188,10 @@
             align-items: flex-start;
             width: 100%;
 
-            h2 {
-                font-size: 1.7647058823529rem;
-                color: #002d5b;
-                margin: 0;
-            }
+            .heading{
+                    color: #002d5b;
+                    font-size: 1.7647058823529rem;
+                }
 
             .underline{
                 border-top: 3px solid rgb(236 91 83);
@@ -205,6 +205,7 @@
                 flex-wrap: wrap;
                 gap: 20px;
                 justify-content: flex-start;
+
 
                 .tech-item {
                     display: flex;
@@ -276,6 +277,7 @@
 
         .Frontend-backend{
             padding: 10px;
+            margin: 0;
 
             .content{
                 padding-left: 10px;
@@ -285,7 +287,15 @@
 
         .tech-stack{
             width: 90%;
+            margin: 10px;
             justify-content: center;
+            .heading{
+
+            }
+
+            .tech-items{
+                padding-left: 10px;
+            }
         }
     }
     }

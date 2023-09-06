@@ -99,7 +99,10 @@ function About() {
 
         </div>
         <div className="tech-stack">
-            <h2>Tech Stack</h2>
+          <div className='heading'>
+            Tech Stack
+          </div>
+            
             <div className='underline'></div>
             <div className="tech-items">
                 {TechStack.map((tech, index) => (
