@@ -64,10 +64,40 @@
         .big-box{
             border-radius: 20px;
             padding: 10px;
+
+            img{
+                cursor: pointer;
+                transition: .3s ease-in-out;
+            }
+
+            img:hover{
+                transition: .3s ease-in-out;
+                opacity: .3;
+            }
         }
+
+        .big-box:hover img{
+            opacity: 0.3;
+        }
+
+        .big-box:hover .middle{
+            opacity: 1;
+        }
+
         .small-box{
             border-radius: 20px;
             padding: 10px;
+            transition: .3s ease-in-out;
+            
+            img{
+                transition: .3s ease-in-out;
+                cursor: pointer;
+            }
+
+            img:hover{
+                transition: .3s ease-in-out;
+                opacity: .3;
+            }
         }
 
         .small-image{
