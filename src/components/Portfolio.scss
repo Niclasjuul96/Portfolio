@@ -138,11 +138,87 @@
         #image9{
             grid-area: 4 / 2 / span 2/ span 2;
         }
-
-
-
     }
-    
+
+    .modal {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      
+      .content {
+        background: rgb(255,255,255);
+        padding: 30px;
+        border-radius: 10px;
+        width: 40%;
+        height: 80%;
+        overflow-y: auto;
+        text-align: center;
+      
+        .close {
+          position: absolute;
+          top: 10px;
+          right: 20px;
+          font-size: 72px;
+          color: white;
+          cursor: pointer;
+        }
+
+        .image{
+            width: 80%;
+            height: 50%;
+        }
+
+        .title{
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: 1.2em;
+        }
+
+        .techstack{
+            font-size: 1.5rem;
+        }
+
+        .btns{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            button{
+                height: 40px;
+                width: 120px;
+                border:none;
+                background-color: #002d5b;
+                color: white;
+                border-radius: 10px;
+            }
+            .Github{
+                background-color: rgb(236 91 83);
+            }
+            
+
+        }
+
+
+      }
+    }
+}
+
+@media (max-width: 425px) {
+    .modal{
+        .content{
+            max-height: 60% !important;
+            width: 95% !important;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -175,6 +251,13 @@
 
 
         }
+
+        .modal{
+            .content{
+                width: 70%;
+            }
+        }
     }
     
 }
+

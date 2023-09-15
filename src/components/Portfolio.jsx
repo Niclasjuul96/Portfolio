@@ -1,17 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Portfolio.scss';
 import projects from "../assets/projects"
 
 
 
 function Portfolio() {
+  const [selectedProject, setSelectedProject] = useState(null);
   document.title = 'Portfolio';
 
 
   const onProjectclick = (project) => {
-    window.open(project.livepreviewurl, '_blank');
+    setSelectedProject(project);
   }
 
+  const closeModal = () => {
+    setSelectedProject(null);
+  }
+
+  const handleClicklive = () => {
+    window.open(selectedProject.livepreviewurl);
+  }
+
+  const handleClickGit = () => {
+    window.open(selectedProject.githuburl);
+  }
   
   let counter = 0; 
   const projectsContent = projects.map(project => {
@@ -31,7 +43,9 @@ function Portfolio() {
     }else{
       return (<></>)
     }
-  })
+  });
+
+
 
   return (
     <div className="Portfolio">
@@ -57,6 +71,22 @@ function Portfolio() {
       <section className='projects'>
         {projectsContent}
       </section>
+
+      {selectedProject && (
+        <div className="modal">
+          <div className="content">
+            <span className="close" onClick={closeModal}>&times;</span>
+            <img className='image' src={selectedProject.imgURL} alt='project'></img>
+            <h2 className='title'>{selectedProject.title}</h2>
+            <p className='detail'>{selectedProject.detail}</p>
+            <p className='techstack'><b>TechStack used:</b> {selectedProject.tech.join(", ")}</p>
+            <div className="btns">
+              <button className='livepreview' onClick={handleClicklive}>Live Preview</button>
+              <button className='Github'onClick={handleClickGit}>Github Repository</button>
+            </div>
+          </div>
+        </div>
+      )}
   
     </div>
   );

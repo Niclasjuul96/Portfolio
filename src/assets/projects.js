@@ -1,11 +1,34 @@
 import NoteEase from "./project-images/NoteEase.png";
 import SimonGame from "./project-images/SimonGame.png";
 import Password from "./project-images/password.png";
-
+import ChatAPP from "./project-images/Chat-App.png"
 
 const projects = [
   {
     id: 1,
+    title: "Chat-App",
+    imgURL:
+      ChatAPP,
+    detail: 
+      "This chat application is based on react and using firebase as the backend" + 
+      "to track messages back and forth between users. It is available to use the " +
+      "existing accounts or creating a new account." + 
+      "Account 1: email: jimmy@gmail.com pass: password" +
+      "Account 2: email: jenna@gmail.com pass: password" +
+      "Account 3: email: jennifer@gmail.com pass: password" +
+      "Account 4: email: peter@gmail.com pass: password" +
+      "It will be possible to find the users by thier firstName, upper and lowercase dosn't matter." +
+      "for the real experience i would recommend to create an account and searching for users."+
+      "cause many of the test users already have conversations between them.",
+    githuburl: 
+      "https://github.com/Niclasjuul96/Chat-App",
+    livepreviewurl:
+      "http://chatapp.niclasjuul.com/",
+    tech:
+      ["react", "javascript", "node.js","json","firebase"]
+  },
+  {
+    id: 2,
     title: "NoteEase ",
     imgURL:
       NoteEase,
@@ -19,7 +42,7 @@ const projects = [
       ["react", "javascript", "node.js","json"]
   },
   {
-    id: 2, 
+    id: 3, 
     title: 
       "Simon Says Game",
     imgURL: 
@@ -34,7 +57,7 @@ const projects = [
       ["Html", "CSS", "JavaScript"]
   },
   {
-    id: 3, 
+    id: 4, 
     title: 
       "Password Generator", 
     imgURL: 
