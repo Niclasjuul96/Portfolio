@@ -13,10 +13,6 @@ const projects = [
       "This chat application is based on react and using firebase as the backend" + 
       "to track messages back and forth between users. It is available to use the " +
       "existing accounts or creating a new account." + 
-      "Account 1: email: jimmy@gmail.com pass: password" +
-      "Account 2: email: jenna@gmail.com pass: password" +
-      "Account 3: email: jennifer@gmail.com pass: password" +
-      "Account 4: email: peter@gmail.com pass: password" +
       "It will be possible to find the users by thier firstName, upper and lowercase dosn't matter." +
       "for the real experience i would recommend to create an account and searching for users."+
       "cause many of the test users already have conversations between them.",
@@ -25,7 +21,9 @@ const projects = [
     livepreviewurl:
       "http://chatapp.niclasjuul.com/",
     tech:
-      ["react", "javascript", "node.js","json","firebase"]
+      ["react", "javascript", "node.js","json","firebase"],
+    accounts:
+      ['Account 1: jimmy@gmail.com, pass: password', 'Account 2: jenna@gmail.com, pass: password', 'Account 3: jennifer@gmail.com, pass: password', 'Account 4: peter@gmail.com pass: password']
   },
   {
     id: 2,

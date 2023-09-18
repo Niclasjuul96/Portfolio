@@ -79,14 +79,25 @@ function Portfolio() {
             <img className='image' src={selectedProject.imgURL} alt='project'></img>
             <h2 className='title'>{selectedProject.title}</h2>
             <p className='detail'>{selectedProject.detail}</p>
+            {selectedProject.accounts && (
+              <p>
+                {selectedProject.accounts.map((account, index) => (
+                  <>
+                    {account}
+                    {index < selectedProject.accounts.length - 1 && <br />}
+                  </>
+                ))}
+              </p>
+            )}
             <p className='techstack'><b>TechStack used:</b> {selectedProject.tech.join(", ")}</p>
             <div className="btns">
               <button className='livepreview' onClick={handleClicklive}>Live Preview</button>
-              <button className='Github'onClick={handleClickGit}>Github Repository</button>
+              <button className='Github' onClick={handleClickGit}>Github Repository</button>
             </div>
           </div>
         </div>
       )}
+
   
     </div>
   );
