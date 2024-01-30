@@ -58,7 +58,7 @@ function Contact() {
               </div>            
               <div className='email'>
                 <div className='icon'><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                <div className='heading'>Niclasschaeffer@gmail.com</div>
+                <div className='heading'>Niclasschaeffer96@gmail.com</div>
                 <div className='description'>Send me an email, and lets talk</div>
               </div>
               <div className='city'>

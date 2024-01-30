@@ -2,6 +2,7 @@ import NoteEase from "./project-images/NoteEase.png";
 import SimonGame from "./project-images/SimonGame.png";
 import Password from "./project-images/password.png";
 import ChatAPP from "./project-images/Chat-App.png"
+import KanBan from "./project-images/KanBan.png"
 
 const projects = [
   {
@@ -68,6 +69,22 @@ const projects = [
       "http://passwordgenerator.niclasjuul.com/",
     tech: 
       [ "html", "CSS", "JavaScript"]
+  }, 
+  {
+    id: 5,
+    title: 
+      "KanBan Board",
+    imgURL: 
+      KanBan,
+    detail: 
+      "This small kanban board project is based on console application, and coordination through tublespaces. Able to work around with the application at the same time without interfering with others. The live-preview will not work, so if you wanna look how it works, you will need to go to github and clone it.",
+    githuburl: 
+      "https://github.com/Niclasjuul96/KanBan",
+    livepreviewurl: 
+      "",
+    tech: 
+      [ "Java", "Tublespaces"]
+
   }
 ]
 
