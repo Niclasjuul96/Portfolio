@@ -55,9 +55,9 @@
     .projects{
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(3, 400px);
-        grid-template-rows: repeat(5, 250px);
-        width: 1200px;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(5, 20%);
+        width: 100%;
         height: 100%;
 
 
@@ -101,13 +101,13 @@
         }
 
         .small-image{
-            width: 380px;
-            height: 220px;
+            width: 100%;
+            height: 100%;
             object-fit: fill;
         }
         .big-image{
-            width: 780px;
-            height: 470px;
+            width: 100%;
+            height: 100%;
             object-fit: fill;
         }
 

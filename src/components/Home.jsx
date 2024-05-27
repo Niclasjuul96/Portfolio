@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import Homeabout from "../assets/section-1-bg1.jpg"
-import Avatar from "../assets/juulprofile.png"
+import Avatar from "../assets/ProfilePictureJuul.png"
 import Services from "../assets/services"
 import Experiences from "../assets/WorkExperience"
 
@@ -144,7 +144,7 @@ function Home() {
           What Services I'm Providing
         </div>
         <div className='subtext'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>below you can see what services i provide.</p>
         </div>
         <section className='content'>
           {servicescontent}
@@ -156,7 +156,7 @@ function Home() {
           Work Experience
         </div>
         <div className='subtext'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          below you can see what work experience i have in this field.
         </div>
         <div className='content-1'>
           {workExperience1}
