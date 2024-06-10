@@ -73,8 +73,7 @@ function Home() {
         <div className='Home-who'>
           <div className='Home-title'>I'm Web Developer Niclas Schæffer</div>
           <div className='Home-subtext'> 
-            A passionate Fullstack Web Developer based in Roskilde. co owner of StableStack, and a fulltime dad.
-            Fast learner and ready for some challenges.   
+            A passionate Fullstack Web Developer based in Roskilde. Fast learner and ready for some challenges.   
           </div>
           {/* <div className='Home-learn-more'><button onClick={redirectlearnmore}>Learn More</button></div> */}
         </div>
